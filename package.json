@@ -1,0 +1,33 @@
+{
+  "name": "clear-ramda",
+  "version": "1.0.0",
+  "description": "Details about ramdajs functions",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roman Meshcheriakov",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gthrm/clear-ramda.git"
+  },
+  "keywords": [
+    "ramdajs"
+  ],
+  "bugs": {
+    "url": "https://github.com/gthrm/clear-ramda/issues"
+  },
+  "homepage": "https://github.com/gthrm/clear-ramda#readme"
+}
