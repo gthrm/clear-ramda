@@ -7,3 +7,7 @@
 ## Как запустить примеры
 
 `yarn install && node DIR_NAME/index.mjs`
+
+## Функции:
+
+- [memoizeWith](https://github.com/gthrm/clear-ramda/blob/main/memoizeWith/index.mjs)
