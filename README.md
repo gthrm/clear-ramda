@@ -1,13 +1,15 @@
-# CLEAR-RAMDA - Подробнеее про функции рамды на Русском
+# CLEAR-RAMDA
 
-## Что это
+### Подробнеее про функции рамды на Русском
+
+## Что это:
 
 Разбираюсь в ramdajs и пишу свои мысли тут
 
-## Как запустить примеры
+## Как запустить примеры:
 
 `yarn install && node DIR_NAME/index.mjs`
 
-## Функции:
+## Функции (будут пополняться):
 
 - [memoizeWith](https://github.com/gthrm/clear-ramda/blob/main/memoizeWith/index.mjs)
