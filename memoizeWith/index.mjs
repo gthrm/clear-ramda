@@ -1,4 +1,4 @@
-import { memoizeWith } from 'ramda'
+import R from 'ramda'
 
 /**
  * Описание из доки:
@@ -27,7 +27,7 @@ export const fn = (value) => {
   * вызываем memoFn(4):  8
   * ---
   */
-export const memoFn = memoizeWith((value) => value, fn)
+export const memoFn = R.memoizeWith((value) => value, fn)
 
 console.log('📺 --- memoFn()')
 console.log('вызываем memoFn(4) => ', memoFn(4))
@@ -38,7 +38,7 @@ console.log(' ')
 
 // *****
 // Примечание:
-// Интересно то, что в доке не сказано, что первый аргумент в memoizeWith должен быть функцией, которая возвращает значение для сравнения
+// Интересно то, что в доке не сказано, что первый аргумент в R.memoizeWith должен быть функцией, которая возвращает значение для сравнения
 // Например (key) => key или R.identity
 // *****
 
@@ -71,7 +71,7 @@ export const fn2 = (obj) => {
  * вызываем fn2({ key: 6 }) =>  { key: 12 }
  * ---
  */
-export const memoFn2 = memoizeWith((value) => value, fn2)
+export const memoFn2 = R.memoizeWith((value) => value, fn2)
 
 console.log('📺 --- memoFn2()')
 console.log('вызываем fn2({ key: 6 }) => ', memoFn2({ key: 6 }))
@@ -82,7 +82,7 @@ console.log(' ')
 
 // *****
 // Примечание:
-// Если первым аргументом для memoizeWith передать что-то вроде (obj) => obj.key, чтобы функция возвращала приметив,
+// Если первым аргументом для R.memoizeWith передать что-то вроде (obj) => obj.key, чтобы функция возвращала приметив,
 // то может показаться, что всё работает, но если в объекте изменится что-то кроме значения key,
 // функция не перевычистится и будет возвращать старый результат
 // НАПРИМЕР: ниже
@@ -100,7 +100,7 @@ console.log(' ')
  * вызываем memoFn2D1({ key: 6, key2: 5 }) =>  { key: 12 }  - НЕ СРАБОТАЛО
  * ---
  */
-export const memoFn2D1 = memoizeWith((obj) => obj.key, fn2)
+export const memoFn2D1 = R.memoizeWith((obj) => obj.key, fn2)
 
 console.log('📺 --- memoFn2D1()')
 console.log('вызываем memoFn2D1({ key: 6 }) => ', memoFn2D1({ key: 6 }))
@@ -129,7 +129,7 @@ console.log(' ')
  * вызываем memoFn2D1({ key: 6, key2: 5 }) =>  { key: 12, key2: 5 }
  * ---
  */
-export const memoFn2D2 = memoizeWith((obj) => JSON.stringify(obj), fn2)
+export const memoFn2D2 = R.memoizeWith((obj) => JSON.stringify(obj), fn2)
 
 console.log('📺 --- memoFn2D2()')
 console.log('вызываем memoFn2D2({ key: 6 }) => ', memoFn2D2({ key: 6 }))

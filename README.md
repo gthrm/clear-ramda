@@ -13,4 +13,4 @@
 
 ## Функции (будут пополняться):
 
-- [memoizeWith](https://github.com/gthrm/clear-ramda/blob/main/memoizeWith/index.mjs)
+- [R.memoizeWith](https://github.com/gthrm/clear-ramda/blob/main/R.memoizeWith/index.mjs)
