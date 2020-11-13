@@ -14,3 +14,4 @@
 ## Функции (будут пополняться):
 
 - [R.memoizeWith](https://github.com/gthrm/clear-ramda/blob/main/R.memoizeWith/index.mjs)
+- [R.apply](https://github.com/gthrm/clear-ramda/blob/main/apply/index.mjs)
